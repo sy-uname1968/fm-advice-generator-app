@@ -1,3 +1,4 @@
+// import './style.css'
 import axios from 'axios';
 
 const advice_url = "https://api.adviceslip.com/advice"
