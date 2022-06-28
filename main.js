@@ -5,9 +5,10 @@ const advice_url = "https://api.adviceslip.com/advice"
 const quoteBody = document.querySelector(".advice-body")
 const quoteCounter = document.querySelector(".advice-number")
 const adviceButton = document.querySelector(".advice-btn")
+const buttonImg = document.querySelector('.advice-btn img');
 
 const getAdvice = async() => {
- 
+  buttonImg.classList.add('btn-img-spin')
   const options = {
     headers: { 
             "Accept" : "application/json",
@@ -34,5 +35,9 @@ adviceButton.addEventListener("click", (e) => {
   getAdvice()
 })
 
+buttonImg.addEventListener('transitionend', e => {
+  e.target.classList.remove('btn-img-spin')
+})
 
-getAdvice()
+
+// getAdvice()

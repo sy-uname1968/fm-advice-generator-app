@@ -82,13 +82,13 @@ main {
   transition: box-shadow 0.5s ease;
 }
 
-.advice-btn::before {
+/* .advice-btn::before {
   display: inline-block;
   content: url(./images/icon-dice.svg);
   position: absolute;
   top: 20px;
   right: 20px;
-}
+} */
 
 .advice-btn:hover {
   cursor: pointer;
@@ -96,6 +96,12 @@ main {
   transition: box-shadow 0.5s ease;
   
 }
+
+.btn-img-spin {
+  transition: .8s transform;
+  transform: rotate(360deg);
+}
+
 
 @media screen and (max-width:768px){
 
